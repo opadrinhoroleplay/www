@@ -62,8 +62,8 @@ const HeroSection = () => {
 					<div className="space-y-3">
 						<p className="text-sm text-slate-300/90 transition-colors duration-300">Regista-te no portal para começares a tua aventura</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center relative px-4">
-							<div className="relative group">
-								<PortalButton />
+							<div className="cursor-not-allowed relative group">
+								<PortalButton className="cursor-not-allowed"/>
 								<div className="absolute left-1/2 -translate-x-1/2 mt-2 hidden sm:group-hover:block bg-gradient-to-b from-black/80 to-black/90 backdrop-blur-md text-white/90 text-sm px-4 py-2.5 rounded-xl whitespace-nowrap shadow-lg transition-all duration-300 ease-out sm:group-hover:opacity-100 sm:group-hover:translate-y-0 opacity-0 translate-y-[-5px]">
 									<div className="flex items-center gap-2">
 										<div className="w-2 h-2 rounded-full bg-amber-500/80 animate-pulse transition-colors duration-300"></div>
@@ -73,8 +73,8 @@ const HeroSection = () => {
 							</div>
 							<div className="relative group hidden sm:block">
 								<button 
-									onClick={handlePortalClick}
-									className="fivem-button flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 text-white rounded-lg text-lg font-semibold transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]"
+									// onClick={handlePortalClick}
+									className="fivem-button cursor-not-allowed flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 text-white rounded-lg text-lg font-semibold transition-all duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]"
 									style={{boxShadow: '0 0 0 1px rgba(4,4,5,0.2), 0 2px 2px rgba(0,0,0,0.1)'}}
 								>
 									<svg role="img" viewBox="0 0 24 24" className="w-6 h-6 transition-transform duration-300 ease-out group-hover:scale-110" fill="currentColor">

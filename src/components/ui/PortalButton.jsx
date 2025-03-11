@@ -3,7 +3,7 @@ import { LayoutDashboard } from 'lucide-react';
 import { getReferral } from '../../utils/referral';
 import LightButton from './LightButton';
 
-const PortalButton = () => {
+const PortalButton = ({ className }) => {
 	const handlePortalClick = e => {
 		e.preventDefault();
 		
@@ -18,6 +18,7 @@ const PortalButton = () => {
 			title="Utiliza o portal para gerir as tuas personagens, candidaturas, oportunidades e etc."
 			leftIcon={<LayoutDashboard className="w-5 h-5 transition-transform duration-300 ease-out group-hover:scale-110" />}
 			aria-label="Registar-se no portal da comunidade"
+			className={className}
 		>
 			Entrar no Portal
 		</LightButton>
