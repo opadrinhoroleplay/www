@@ -42,9 +42,15 @@ const AboutSection = () => (
 						Tudo começou na comunidade GTApt.net, onde a nossa paixão pelo roleplay nasceu nos tempos do SA-MP. 
 						Uma jornada que começou há mais de uma década e que hoje continua mais forte do que nunca no FiveM.
 					</p>
-					<LightButton>
-						Descobre a Nossa História
-					</LightButton>
+					<div className="inline-block">
+						<LightButton 
+							to="/historia"
+							aria-label="Ver a nossa história completa"
+							className="inline-flex"
+						>
+							Descobre a Nossa História
+						</LightButton>
+					</div>
 				</div>
 			</ScrollReveal>
 		</div>
